@@ -56,7 +56,7 @@ public class MainActivity extends Activity implements SensorEventListener {
       float I[] = new float[9];
       float [] A_D = mGeomagnetic.clone();
       float [] A_W = new float[3];
-      boolean success = SensorManager.getRotationMatrix(R, I, mGravity, mGeomagnetic);
+//      boolean success = SensorManager.getRotationMatrix(R, I, mGravity, mGeomagnetic);
       if (R.length==9) {
     	
           A_W[0] = R[0] * A_D[0] + R[1] * A_D[1] + R[2] * A_D[2];
